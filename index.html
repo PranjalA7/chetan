@@ -9,22 +9,28 @@ html, body {
     margin: 0;
     padding: 0;
 }
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+img {
+    padding: 0;
+    display: block;
+    margin: 0 auto;
+    max-height: 100%;
+    max-width: 100%;
 
-img{  
-        max-height: 100%;  
-        max-width: 100%; 
-        position: absolute;  
-        top: 0;  
-        bottom: 0;  
-        left: 0;  
-        right: 0;  
-        margin: auto;
-    }
-   </style>
+}
+
+</style>
 </head>
 <body>
-  <img class="fit" src="invitation.jpg" alt="Italian Trulli">
-
+<div class="vertical-center">
+  <img class="center" src="invitation.jpg" alt="Italian Trulli">
+</div>
 
 
 </body>
